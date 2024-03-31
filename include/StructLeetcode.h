@@ -18,7 +18,7 @@ struct TreeNode* createNode(int val) {
     return newNode;
 }
 
-typedef struct {
+typedef struct HashItem{
     int key;
     UT_hash_handle hh;
-} HashItem; 
+}; 
