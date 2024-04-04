@@ -35,10 +35,9 @@ void grep(const char *pattern, const char *filename)
             {
                 fprintf(stdout, line_max_array);
                 --flagRowPrintNum;
+                rowNumber++;
             }
-            return;
         }
-        rowNumber++;
     }
     if (fclose(file) != 0)
     {

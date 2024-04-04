@@ -3,6 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #pragma region tree
+typedef struct TreeNode
+{
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+} TreeNode;
+
 typedef struct BinaryTreeNode
 {
     int val;
