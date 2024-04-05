@@ -10,6 +10,15 @@ typedef struct TreeNode
     struct TreeNode *right;
 } TreeNode;
 
+TreeNode *createTreeNode(int val)
+{
+    TreeNode *newNode = (TreeNode *)malloc(sizeof(TreeNode));
+    newNode->val = val;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+
 typedef struct BinaryTreeNode
 {
     int val;
